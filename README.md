@@ -1,1 +1,1 @@
-# A simple shallow feed forwarding neural network
+# A simple feed forwarding neural network

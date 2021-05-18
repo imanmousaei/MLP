@@ -21,7 +21,7 @@ for L=2:Nlayers
        for j=1:layers(L)
            tmp = tmp + w(L,i,j)*a(L-1,j);
        end
-       a(L,i) = tmp;
+       a(L,i) = actFcn(tmp,L,Nlayers);
    end
 end
 
