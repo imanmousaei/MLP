@@ -2,7 +2,7 @@ function [w,b] = backprop(a,z,y,layers,w,b,alpha)
     % return gradient of MSE loss function to w(L,i,j) ; 
     % w(L,i,j) : weight of a(L,i) to a(L-1,j)
     % z : w(L,i).a(L-1,j) + b(L,i)
-    % layers : number of nodes in each layers
+    % layers : number of nodes in each layer
     % alpha : learning rate
 
     Nlayers = numel(layers);

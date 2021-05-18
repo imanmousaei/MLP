@@ -1,7 +1,0 @@
-function gradient(i,j)
-% return gradient of MSE loss function to w(L,
-
-
-end
-
-

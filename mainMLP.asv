@@ -17,11 +17,10 @@ Nlayers = numel(layers);
 %% evaluate activations
 for L=2:Nlayers
    for i=1:layers(L)
-       tmp = b(L,i);
+       tmp = ;
        for j=1:layers(L)
-           tmp = tmp + w(L,i,j)*a(L-1,j);
+           
        end
-       a(L,i) = tmp;
    end
 end
 
