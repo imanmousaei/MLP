@@ -11,7 +11,7 @@ D=xlsread('dataset.xlsx');
 %% vars
 alpha = 0.1; % learning rate
 layers = [size(D,2)-1, 10, 1]; % number of nodes in each layer
-epochs = 10;
+epochs = 20;
 Nlayers = numel(layers);
 maxL = max(size(D,2)-1,10);
 N = size(D,1);
@@ -28,7 +28,7 @@ w = zeros(Nlayers, maxL, maxL);
 for L=2:Nlayers
    for i=1:layers(L)
        for j=1:layers(L-1)
-           w(L,i,j) = rand * 100;
+           w(L,i,j) = rand * 10;
        end
    end
 end
